@@ -53,14 +53,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //uwierzytelnianie SMTP
         $mail->SMTPAuth = true;
         //username oraz password: dane do uwierzytelniania na serwerze SMTP.
-        $mail->Username = 'email admin';
-        $mail->Password = 'password';
+        $mail->Username = 'afrykablog1@gmail.com';
+        $mail->Password = 'jopq wujs maht xkxm';
         //będzie się łączyć z serwerem poprzez protokołu ssl
         $mail->SMTPSecure = 'ssl';
         //numer portu, na którym działa serwer SMTP
         $mail->Port = 465;
         //adres nadawcy czyli mój email
-        $mail->setFrom('email admin');
+        $mail->setFrom('afrykablog1@gmail.com');
         //dodaje adres e-mail odbiorcy, który jest przekazywany z formularza
         $mail->addAddress($email);
         //treść które zostanie wysłane będzie w formacie HTML

@@ -19,12 +19,12 @@ function sendEmailNotification($authorEmail, $nazwa, $opis, $gatunek, $waga, $re
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'email admin';
-    $mail->Password = 'password';
+    $mail->Username = 'afrykablog1@gmail.com';
+    $mail->Password = 'jopq wujs maht xkxm';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setFrom('email admin');
+    $mail->setFrom('afrykablog1@gmail.com');
     $mail->addAddress($authorEmail);
     $mail->isHTML(true);
     $mail->Subject = "Zmiana wpisu";

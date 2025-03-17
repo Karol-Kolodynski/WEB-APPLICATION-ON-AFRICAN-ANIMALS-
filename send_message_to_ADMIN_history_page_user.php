@@ -34,11 +34,11 @@ function sendEmailNotification($username, $authorEmail, $adminEmail, $nazwa, $op
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'email admin';
-    $mail->Password = 'password';
+    $mail->Username = 'afrykablog1@gmail.com';
+    $mail->Password = 'jopq wujs maht xkxm';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('email admin');
+    $mail->setFrom('afrykablog1@gmail.com');
     $mail->isHTML(true);
     $mail->Subject = "$username: prośba o zmianę wpisu";
 
@@ -104,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['message_ADMIN']) && is
         mysqli_stmt_bind_result($stmtAuthorEmail, $authorEmail);
         mysqli_stmt_fetch($stmtAuthorEmail);
         mysqli_stmt_close($stmtAuthorEmail);
-        sendEmailNotification($username, 'email admin', $authorEmail, $nazwa, $opis, $gatunek, $waga, $obrazek_zawartosc, $file_extension, $message_ADMIN);
+        sendEmailNotification($username, 'afrykablog1@gmail.com', $authorEmail, $nazwa, $opis, $gatunek, $waga, $obrazek_zawartosc, $file_extension, $message_ADMIN);
         $_SESSION['success'] = "Wiadomość została wysłana!";
         header("Location: history_in_entry_page_user.php");
         exit();

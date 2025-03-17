@@ -24,11 +24,11 @@ function sendEmailNotificationOnEntryDeletion($username, $userEmail, $nazwa, $op
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'email admin';
-    $mail->Password = 'password';
+    $mail->Username = 'afrykablog1@gmail.com';
+    $mail->Password = 'jopq wujs maht xkxm';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('email admin');
+    $mail->setFrom('afrykablog1@gmail.com');
 
     // Sprawdź czy adres email autora jest prawidłowy
     if (!empty($userEmail)) {
@@ -69,11 +69,11 @@ function sendEmailNotificationOnCommentDeletion($username, $userEmail,$komentarz
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'email admin';
-    $mail->Password = 'password';
+    $mail->Username = 'afrykablog1@gmail.com';
+    $mail->Password = 'jopq wujs maht xkxm';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('email admin');
+    $mail->setFrom('afrykablog1@gmail.com');
 
     // Sprawdź czy adres email autora jest prawidłowy
     if (!empty($userEmail)) {
@@ -110,11 +110,11 @@ function sendEmailNotificationOnUserDeletion($username, $userEmail, $passwordd, 
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'email admin';
-    $mail->Password = 'password';
+    $mail->Username = 'afrykablog1@gmail.com';
+    $mail->Password = 'jopq wujs maht xkxm';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('email admin');
+    $mail->setFrom('afrykablog1@gmail.com');
 
     $mail->addAddress($userEmail);
     $mail->isHTML(true);

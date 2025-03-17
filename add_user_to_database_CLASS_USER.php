@@ -66,7 +66,7 @@ function isStrongPassword($password) {
 // Sprawdzanie reCAPTCHA
 if (isset($_POST['g-recaptcha-response'])) {
     $recaptcha_response = $_POST['g-recaptcha-response'];
-    $secret_key = "SECRET-KEY";
+    $secret_key = "6LekCgkpAAAAAATqsPtkWKNlEyTsYpygskV-FAfI";
     $check = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $recaptcha_response);
     $answer = json_decode($check);
 
@@ -119,11 +119,11 @@ if (mysqli_query($connection, $add_user_query)) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'email admin';
-        $mail->Password = 'password';
+        $mail->Username = 'afrykablog1@gmail.com';
+        $mail->Password = 'jopq wujs maht xkxm';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
-        $mail->setFrom('email admin');
+        $mail->setFrom('afrykablog1@gmail.com');
 
         $mail->addAddress($user_email);
         $mail->isHTML(true);

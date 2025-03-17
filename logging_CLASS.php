@@ -7,7 +7,7 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
-$secret_key = "SECRET KEY";
+$secret_key = "6LekCgkpAAAAAATqsPtkWKNlEyTsYpygskV-FAfI";
 
 if (isset($_POST['g-recaptcha-response'])) {
     $recaptcha_response = $_POST['g-recaptcha-response'];
@@ -70,11 +70,11 @@ function sendLoginNotification($username, $user_email, $connection) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'email admin';
-    $mail->Password = 'password';
+    $mail->Username = 'afrykablog1@gmail.com';
+    $mail->Password = 'jopq wujs maht xkxm';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
-    $mail->setFrom('email admin');
+    $mail->setFrom('afrykablog1@gmail.com');
 
     $mail->addAddress($user_email);
     $mail->isHTML(true);
